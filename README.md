@@ -14,7 +14,7 @@
 
 5. redis
 6. rabbitMQ
-˚
+
 7. swagger
 
 ```

@@ -1,0 +1,2 @@
+scaffold : [2019-01-15 14:51:47] [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'oneMapper' and 'com.alu.scaffold.mapper.OneMapper' mapperInterface. Bean already defined with the same name!
+scaffold : [2019-01-15 14:51:47] [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.alu.scaffold.mapper]' package. Please check your configuration.

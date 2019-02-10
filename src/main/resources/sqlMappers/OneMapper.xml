@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.alu.scaffold.mapper.OneMapper">
+	<resultMap id="BaseResultMap" type="com.alu.scaffold.dto.OneDO">
+		<id column="id" property="id" jdbcType="BIGINT"/>
+		<result column="name" property="name" jdbcType="VARCHAR"/>
+		<result column="code" property="code" jdbcType="VARCHAR"/>
+		<result column="status" property="status" jdbcType="INTEGER"/>
+		<result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP"/>
+		<result column="gmt_modify" property="gmtModify" jdbcType="TIMESTAMP"/>
+	</resultMap>
+
+	<select id="getOne" resultType="java.lang.Integer">
+		select 1 from dual;
+	</select>
+
+</mapper>

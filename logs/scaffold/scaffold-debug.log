@@ -1,0 +1,3 @@
+scaffold : [2019-01-17 14:49:04] [DEBUG] [com.alu.scaffold.mapper.OneMapper.selectAll:159]-- ==>  Preparing: SELECT id,gmt_create,gmt_modify,name,code,status FROM tb_one 
+scaffold : [2019-01-17 14:49:04] [DEBUG] [com.alu.scaffold.mapper.OneMapper.selectAll:159]-- ==> Parameters: 
+scaffold : [2019-01-17 14:49:04] [DEBUG] [com.alu.scaffold.mapper.OneMapper.selectAll:159]-- <==      Total: 0

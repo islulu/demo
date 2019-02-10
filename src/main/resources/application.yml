@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: scaffold
+server:
+  port: 8080
+logging:
+  level:
+    org.springframework.boot.autoconfigure: INFO
+    #sql日志 打印至 控制台
+    com:
+      alu:
+        scaffold:
+          mapper: debug

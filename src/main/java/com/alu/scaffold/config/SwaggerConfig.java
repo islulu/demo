@@ -34,10 +34,14 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("China Alu API")
-				.description("alu API reference for developers").termsOfServiceUrl("http://github.com")
-				.contact(new Contact("chenjialu", "http://github.com", "chenjialu084@163.com"))
-				.license("Alu License").version("1.0").build();
+		return new ApiInfoBuilder()
+				.title("China Alu API")
+				.description("Alu API reference for developers")
+				.termsOfServiceUrl("http://github.com")
+				.contact(new Contact("chenjialu", "http://github.com", "chenjialu0804@163.com"))
+				.license("Alu License")
+				.version("1.0")
+				.build();
 	}
 
 }

@@ -1,10 +1,10 @@
 package com.alu.scaffold.dto;
 
+import lombok.Data;
 import org.springframework.beans.BeanUtils;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -13,6 +13,7 @@ import java.util.Date;
  * jairy
  * @since $Revision:1.0.0, $Date: 2016年1月9日 上午11:21:43 $
  */
+@Data
 public abstract class BaseDO implements Serializable {
 
     private static final long serialVersionUID = -7649569150898094006L;
@@ -21,47 +22,10 @@ public abstract class BaseDO implements Serializable {
     protected Long            id;
     protected Date            gmtCreate;
     protected Date            gmtModify;
-    @Transient
-    private Long             projectId;
 
     public <T> T copyPropertiesTo(T target, String... ignoreProperties) {
         BeanUtils.copyProperties(this, target, ignoreProperties);
         return target;
-    }
-    
-    public Long getProjectId() {
-		return projectId;
-	}
-    
-	public void setProjectId(Long projectId) {
-		this.projectId = projectId;
-	}
-
-
-
-
-	public Date getGmtCreate() {
-        return gmtCreate;
-    }
-
-    public void setGmtCreate(Date gmtCreate) {
-        this.gmtCreate = gmtCreate;
-    }
-
-    public Date getGmtModify() {
-        return gmtModify;
-    }
-
-    public void setGmtModify(Date gmtModify) {
-        this.gmtModify = gmtModify;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
 	@Override
@@ -93,7 +57,5 @@ public abstract class BaseDO implements Serializable {
         }
         return true;
     }
-
- 
 
 }
